@@ -283,7 +283,7 @@ def Scrape_CNN():
     soup = BeautifulSoup(html, 'lxml')
     
     for link in soup.select('h3[class=cd__headline] > a'):
-        Link.append(link['href'])
+        Link.append('https://www.cnn.com'+link['href'])
         Title.append(link.get_text())
         Spliced_Title = Title[8:15]
         Spliced_Link = Link[8:15]
