@@ -318,9 +318,6 @@ def HTML_Writer(Text,Name):
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <style>
 
-* {
-    margin: 0;
-}
 
 @media only screen and (min-width:601px){
   .all {
@@ -358,6 +355,7 @@ a {
   position: fixed;
   width: 100%;
   top: 0;
+  margin-left: 0;
 }
 
 .topnav a {
@@ -433,9 +431,8 @@ def Summary_Writer(Text,Name,Article_List):
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <style>
 
-* {
-    margin-left: 0;
-}
+
+
 
 @media only screen and (min-width:601px){
   .all {
@@ -473,6 +470,7 @@ a {
   position: fixed;
   width: 100%;
   top: 0;
+  margin-left: 0;
 }
 
 .topnav a {
