@@ -242,6 +242,7 @@ def HTML_Writer(Text,Name):
   .all {
     padding-left: 35%;
     padding-right: 35%;
+    
   }
 }
 
@@ -249,11 +250,13 @@ def HTML_Writer(Text,Name):
   .all {
     padding-left: 5%;
     padding-right: 5%;
+
   }
 }
 
 body {
   margin-bottom:20%;
+  padding-top: 5%;
 }
 
 h1 {
