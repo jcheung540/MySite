@@ -237,8 +237,60 @@ def HTML_Writer(Text,Name):
         <html>
         <head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="stylesheet.css">
-        
+        <style>
+@media only screen and (min-width:601px){
+  .all {
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .all {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+body {
+  margin-bottom:20%;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.link:hover {
+  color: blue;
+}
+        </style>
         <title>HEALTH SUMMARIES</title>
         </head>
         <body>
