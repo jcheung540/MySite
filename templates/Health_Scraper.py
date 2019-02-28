@@ -499,9 +499,9 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#Fox">Fox</a>
-      <a href="#MSNBC">MSNBC</a>
-      <a href="#CNN">CNN</a>
+      <a href ="/news#Fox">Fox</a>
+      <a href="/news#MSNBC">MSNBC</a>
+      <a href="/news#CNN">CNN</a>
     </div>
   </div> 
   
@@ -510,15 +510,15 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#NEJM">NEJM Catalyst</a>
-      <a href="#MHealthcare">Modern Healthcare</a>
-      <a href="#Politico">Politico</a>
-      <a href="#Vox">Vox</a>
-      <a href="#HAffairs">Health Affairs</a>
-      <a href="#Beckers">Becker's Hospital Review</a>
-      <a href="#HDive">Healthcare Dive</a>
-      <a href="#Kaiser">Kaiser Health News</a>
-      <a href="#JAMA">JAMA Forum</a>
+      <a href ="/health#NEJM">NEJM Catalyst</a>
+      <a href="/health#MHealthcare">Modern Healthcare</a>
+      <a href="/health#Politico">Politico</a>
+      <a href="/health#Vox">Vox</a>
+      <a href="/health#HAffairs">Health Affairs</a>
+      <a href="/health#Beckers">Becker's Hospital Review</a>
+      <a href="/health#HDive">Healthcare Dive</a>
+      <a href="/health#Kaiser">Kaiser Health News</a>
+      <a href="/health#JAMA">JAMA Forum</a>
     </div>
   </div> 
 
@@ -527,8 +527,8 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#Fierce">Fierce Biotech</a>
-      <a href="#BioSpace">BioSpace</a>
+      <a href ="/pharma#Fierce">Fierce Biotech</a>
+      <a href="/pharma#BioSpace">BioSpace</a>
 
     </div>
   </div> 
@@ -710,9 +710,9 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#Fox">Fox</a>
-      <a href="#MSNBC">MSNBC</a>
-      <a href="#CNN">CNN</a>
+      <a href ="/news#Fox">Fox</a>
+      <a href="/news#MSNBC">MSNBC</a>
+      <a href="/news#CNN">CNN</a>
     </div>
   </div> 
 
@@ -721,15 +721,15 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#NEJM">NEJM Catalyst</a>
-      <a href="#MHealthcare">Modern Healthcare</a>
-      <a href="#Politico">Politico</a>
-      <a href="#Vox">Vox</a>
-      <a href="#HAffairs">Health Affairs</a>
-      <a href="#Beckers">Becker's Hospital Review</a>
-      <a href="#HDive">Healthcare Dive</a>
-      <a href="#Kaiser">Kaiser Health News</a>
-      <a href="#JAMA">JAMA Forum</a>
+      <a href ="/health#NEJM">NEJM Catalyst</a>
+      <a href="/health#MHealthcare">Modern Healthcare</a>
+      <a href="/health#Politico">Politico</a>
+      <a href="/health#Vox">Vox</a>
+      <a href="/health#HAffairs">Health Affairs</a>
+      <a href="/health#Beckers">Becker's Hospital Review</a>
+      <a href="/health#HDive">Healthcare Dive</a>
+      <a href="/health#Kaiser">Kaiser Health News</a>
+      <a href="/health#JAMA">JAMA Forum</a>
     </div>
   </div> 
 
@@ -738,8 +738,8 @@ a {
       <i class="fa fa-caret-down"></i>
     </a></button>
     <div class="dropdown-content">
-      <a href ="#Fierce">Fierce Biotech</a>
-      <a href="#BioSpace">BioSpace</a>
+      <a href ="/pharma#Fierce">Fierce Biotech</a>
+      <a href="/pharma#BioSpace">BioSpace</a>
 
     </div>
   </div> 
