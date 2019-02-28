@@ -398,6 +398,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -603,6 +607,10 @@ body {
 
 h1 {
   text-align: center;
+}
+
+h3 {
+    text-align: center;
 }
 
 a {
