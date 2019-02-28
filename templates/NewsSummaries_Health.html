@@ -6,10 +6,12 @@
         <style>
 
 
+
+
 @media only screen and (min-width:601px){
   .all {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 25%;
+    padding-right: 25%;
     
   }
 }
@@ -24,7 +26,6 @@
 
 body {
   margin-bottom:20%;
-  padding-top: 5%;
 }
 
 h1 {
@@ -36,62 +37,155 @@ a {
   text-decoration: none;
 }
 
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin-left: 0;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .link:hover {
   color: blue;
 }
-        </style>
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+                </style>
         <title>HEALTH SUMMARIES</title>
         </head>
         <body>
-        <div class = 'topnav'>
-        <a class='active' href='/'> Front Page</a>
-        <a href="/news">News</a>
-        <a href="/health">Health</a>
-        <a href="/pharma">Pharma</a>
+   <div class="navbar">
+<div class="navbar">
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/">Home
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
         </div>
-        <div class='all'><h4>2019-02-27 07:33</h4><h1><a href='https://www.healthaffairs.org/blog'>Health Affairs</a></h1><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190225.558485/full'>Strategies For Health Systems To Engage The IT-Enabled Consumer</a></h3><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190225.482983/full'>New Interoperability Rule Extends To QHP Insurers</a></h3><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190226.451122/full'>Health Affairs: Patients As Consumers</a></h3><br><h1><a href='https://www.healthcaredive.com/'>Healthcare Dive</a></h1><h3><a class='link' href='https://www.healthcaredive.com/news/verily-launches-eye-disease-screening-algorithm-in-india/549229/'>Verily launches eye disease screening algorithm in India</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/amazons-senior-leader-of-healthcare-and-ai-talks-disruption-amazon-web-se/548807/'>Amazon's senior leader of healthcare and AI talks disruption, Amazon Web Services</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/physicians-make-their-hospitals-24m-yearly-report-finds/549142/'>Physicians make their hospitals $2.4M yearly, report finds</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/doctor-on-demand-rolls-out-virtual-care-platform-for-primary-care/549187/'>Doctor On Demand rolls out virtual care platform for primary care</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/ge-danaher-sale-biopharma-business-deal/549130/'>GE selling off biopharma business in $21.4B deal</a></h3><br><h1><a href='https://www.politico.com/health-care'>Politico</a></h1><br><h1><a href='https://www.vox.com/health-care'>Vox</a></h1><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/2/25/18239964/born-alive-abortion-survivors-protection-2019-sasse'>A Republican-backed bill to protect “abortion survivors” just failed. It still matters.</a></h3><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/1/14/18176707/congress-drug-prices-hearing-pharmaceutical-ceos'>Congress is grilling pharma CEOs. Here are 8 ideas for bringing down drug prices.</a></h3><h3><a class='link' href='https://www.vox.com/2018/2/27/16936638/er-bills-emergency-room-hospital-fees-health-care-costs'>Hospitals keep ER fees secret. We’re uncovering them.</a></h3><h3><a class='link' href='https://www.vox.com/2019/2/24/18236482/zuckerberg-hospital-surprise-bills-california'>After Vox story, California lawmakers introduce plan to end surprise ER bills</a></h3><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/2/22/18236227/abortion-planned-parenthood-gag-rule-trump'>The Trump administration is finalizing plans to strip funding from Planned Parenthood</a></h3><br><h1><a href='https://catalyst.nejm.org/'>NEJM Catalyst</a></h1><h3><a class='link' href='https://catalyst.nejm.org/need-more-geriatricians-primary-care/'>We Need More Geriatricians, Not More Primary Care Physicians</a></h3><h3><a class='link' href='https://catalyst.nejm.org/tiered-escalation-huddles-yield-rapid-results/'>Tiered Escalation Huddles Yield Rapid Results</a></h3><h3><a class='link' href='https://catalyst.nejm.org/videos/curbing-health-care-spending-growth/'>Curbing Health Care Spending: The Provider’s Role</a></h3><h3><a class='link' href='https://catalyst.nejm.org/time-to-treatment-cancer-patients/'>Reducing Time-to-Treatment for Newly Diagnosed Cancer Patients</a></h3><h3><a class='link' href='https://catalyst.nejm.org/nursing-bundle-consistent-patient-experience/'>Using a “Nursing Bundle” to Achieve Consistent Patient Experiences Across a Multi-Hospital System</a></h3><br><h1><a href='https://www.beckershospitalreview.com/'>Becker's Hospital Review</a></h1><h3><a class='link' href='https://www.beckershospitalreview.com/finance/how-publicity-spurred-zuckerberg-hospital-to-consider-billing-changes-a-timeline.html'>How publicity spurred Zuckerberg hospital to consider billing changes: A timeline</a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/payer-issues/healthcare-lobbies-against-medicare-for-all-3-things-to-know.html'>Healthcare lobbies against 'Medicare for All': 3 things to know</a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/hospital-executive-moves/rwjbarnabas-health-makes-17-systemwide-regional-leadership-changes.html'>RWJBarnabas Health makes 17 systemwide, regional leadership changes</a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/healthcare-information-technology/94-of-cios-expect-workforce-to-include-robots-by-2025-survey-finds.html'>94% of CIOs expect workforce to include robots by 2025, survey finds</a></h3><h3><a class='link' href='https://www.beckershospitalreview.comhttps://go.beckershospitalreview.com/driving-collaboration-and-alignment-with-a-clinically-integrated-supply-chain?utm_campaign=Cardinal_Webinar_3.7.2019&utm_source=webtextad'>Driving collaboration and alignment with a clinically integrated supply chain.
-</a></h3><br><h1><a href='https://www.modernhealthcare.com/'>Modern Healthcare</a></h1><h3><a class='link' href='/article/20190225/NEWS/190229945/tenet-in-exclusive-talks-over-potential-conifer-deal'>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/news">General News
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fox">Fox</a>
+      <a href="#MSNBC">MSNBC</a>
+      <a href="#CNN">CNN</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href='/health'>Health Care News 
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#NEJM">NEJM Catalyst</a>
+      <a href="#MHealthcare">Modern Healthcare</a>
+      <a href="#Politico">Politico</a>
+      <a href="#Vox">Vox</a>
+      <a href="#HAffairs">Health Affairs</a>
+      <a href="#Beckers">Becker's Hospital Review</a>
+      <a href="#HDive">Healthcare Dive</a>
+      <a href="#Kaiser">Kaiser Health News</a>
+      <a href="#JAMA">JAMA Forum</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/pharma">Pharma News
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fierce">Fierce Biotech</a>
+      <a href="#BioSpace">BioSpace</a>
+
+    </div>
+  </div> 
+</div>
+        </div>
+
+        </div>
+        <div class='all'><h4>2019-02-28 02:19</h4><h1 id=NEJM><a href='https://catalyst.nejm.org/'>NEJM Catalyst</a></h1><h3><a class='link' href='https://catalyst.nejm.org/nursing-bundle-consistent-patient-experience/'>Using a “Nursing Bundle” to Achieve Consistent Patient Experiences Across a Multi-Hospital System</a></h3><p>Click To Enlarge. Geisinger Health System has evolved and grown in terms of diverse cultures, demography, and size over the past 4 years. We addressed inconsistent patient experience by creating a nursing bundle that helped make patients’ experiences more consistent, and more consistently excellent, improving overall patient satisfaction and Geisinger’s performance on standard assessments of patient satisfaction. Measure what you treasure (data are critical). We are measuring our HCAHPS and nursing bundle scores on a monthly basis.</p><br><h3><a class='link' href='https://catalyst.nejm.org/need-more-geriatricians-primary-care/'>We Need More Geriatricians, Not More Primary Care Physicians</a></h3><p>Who will take care of the increasing number of aging, more medically complex and frail people? What our country needs now is more geriatricians. Geriatricians specialize in the care of older adults, whether working as consultants or as primary care physicians. Their role in primary care is increasingly important because our current primary care system is ill-equipped, and in some cases, unwilling, to provide care for older adults. Ironically, the patients who need primary care the most — those with multiple chronic illnesses, or those with dementia or other aging-related syndromes — are usually the ones who cannot find accessible primary care physicians in family medicine or general internal medicine.</p><br><h3><a class='link' href='https://catalyst.nejm.org/tiered-escalation-huddles-yield-rapid-results/'>Tiered Escalation Huddles Yield Rapid Results</a></h3><p>As leaders, we like to think we have all the information we need to address issues effectively and efficiently; but in reality, the information we have is often lagging, coming to us in post-problem, aggregated reports. The information that leaders really need is at the front lines and in real time; and, in just 15 minutes each day, leaders can communicate and align the organization to what is most important. A significant amount of any health system’s knowledge lives in the heads of its caregivers; providing them with a fast and convenient way to escalate that information to leadership can have lasting impacts on response times and critical action plans that resolve safety, practice, access, and stewardship issues. A significant amount of any health system’s knowledge lives in the heads of its caregivers; providing them with a fast and convenient way to escalate that information to leadership can have lasting impacts.” That communication channel can also build a culture of respect and value within an organization and bridge the age-old “does management care?” gap by showing caregivers that leadership is listening to them and addressing issues proactively.</p><br><h3><a class='link' href='https://catalyst.nejm.org/videos/curbing-health-care-spending-growth/'>Curbing Health Care Spending: The Provider’s Role</a></h3><p>Health care costs have historically grown at about 2% faster than income in the U.S., according to Harvard Health Care Policy Professor Michael Chernew. “That cannot happen indefinitely,” he says. “We will have no clothes. We will have no food. We’ll have no shelter, but we’ll just be very healthy.” “One way or another, we are going to control health care spending growth.</p><br><h3><a class='link' href='https://catalyst.nejm.org/bundled-payments-upstream-musculoskeletal-institute/'>Bundled Payments Are Moving Upstream</a></h3><p>By creating a Musculoskeletal Institute and a bundled payment model that focuses on the condition or person level of care, rather than the procedure level, leaders at Dell Medical School at The University of Texas, Austin are finding early success in improving care outcomes while controlling the cost of care for degenerative musculoskeletal disease. Results include double-digit improvement in functional status of the patients at the first follow-up visit, and a decrease of more than 25% in the utilization of elective surgical procedures among the population receiving care. Development of Bundled Payments Medicare pioneered bundled payments with the adoption of the diagnosis-related group (DRG) system for hospital inpatient services in 1983. Since then, bundled payments have expanded and evolved from hospitals to incorporate other providers with the goal of improving patient outcomes and lowering costs, through financial incentives to coordinate care and eliminate inefficient services.</p><br><br><h1 id=MHealthcare><a href='https://www.modernhealthcare.com/'>Modern Healthcare</a></h1><h3><a class='link' href='https://www.modernhealthcare.com/government/house-democrats-introduce-medicare-all-bill'>
+House Democrats introduce ‘Medicare for All' bill
+</a></h3><p>House Democrats on Wednesday rolled out an ambitious proposal to extend Medicare to all Americans, eliminate private insurance and drastically overhaul reimbursement for doctors and hospitals. Rep. Pramila Jayapal (D- Wash.) told reporters that the goal of the Medicare for All Act of 2019, which has more than 100 co-sponsors, is to completely overhaul the U.S. healthcare system and convert it to a government-run entity. The legislation provides an outline of the thinking of some congressional Democrats on "Medicare for All," an issue that has been highly debated among Democrats running for president in 2020. "We believe that the market is broken and that is the core idea that we would like to fix," She said on a call with reporters Tuesday. "We love to buy our coffee from Starbucks…but there are some things that should not be provided through the for-profit marketplace and we believe healthcare is one of them."</p><br><h3><a class='link' href='https://www.modernhealthcare.com/government/senate-bill-wants-sweeten-deal-states-expand-medicaid'>
+Senate bill wants to sweeten deal for states to expand Medicaid
+</a></h3><p>A trio of Democratic senators introduced a bill on Wednesday that would give states that recently expanded Medicaid the same federal funding as those that previously expanded. The legislation from Democratic Sens. Mark Warner and Tim Kaine of Virginia and Doug Jones of Alabama comes as more red states are considering expansion. "It's crazy that for so many years, Virginia taxpayers were footing the bill for states that had already expanded Medicaid," Warner said in a statement. So far 33 states and the District of Columbia have expanded Medicaid since the expansion was implemented in 2014 and three other states (Idaho, Utah and Nebraska) that passed a ballot measure to expand it.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/people/navicent-health-names-chief-information-and-digital-officer'>
+Navicent Health names chief information and digital officer
+</a></h3><p>Navicent Health has promoted its CIO, Omer Awan, to lead digital strategy for its recent merger with Atrium Health, the health system announced Feb. 27. Awan will now serve as Navicent Health's chief information and digital officer. Awan joined the Macon, Ga.-based health system as CIO in 2016 from Eastern Maine Healthcare Systems in Brewer, where he held the titles of vice president and senior regional CIO. Before his career as a hospital CIO, Awan held multiple leadership positions at Cerner. In his new role, Awan's responsibilities will expand to include developing the digital strategy for Navicent Health's merger with Atrium Health, a Charlotte, N.C.-based health system.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/finance/uhs-profit-plummets-fourth-quarter-stabilizes-full-year-results'>
+UHS' profit plummets in fourth quarter, stabilizes in full-year results
+</a></h3><p>Universal Health Services' profit took a hit at the end of 2018, but its full-year results show modest growth in net income. Net income attributable to the King of Prussia, Pa.-based hospital chain was $158 million in the fourth quarter of 2018, down 28% from the prior-year period, according to its latest financial filing. Full-year 2018 net income was $780 million, up 3.6% from 2017. UHS reported $2.8 billion in revenue during the fourth quarter of 2018, up 4% from $2.6 billion in the prior-year period. Full-year 2018 revenue was $10.8 billion, up 3.5% from $10.4 billion in 2017.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/government/health-officials-lawmakers-take-aim-false-measles-vaccine-claims'>
+Health officials, lawmakers take aim at false measles vaccine claims 
+</a></h3><p>Public health officials say the spread of misinformation about the safety and efficacy of vaccines has fueled a series of measles outbreaks across the country. There have been more than 159 cases in 10 states since January. Testifying before the House Committee on Energy and Commerce, Dr. Anthony Fauci, director of the NIH's National Institute of Allergy and Infectious Diseases, called false information distributed through social media about the use of the Measles, Mumps and Rubella vaccine a 'threat' to public health that could only be counteracted with a sustained public education effort. "The good news about the internet is that it spreads important information, and that's good, and the bad news about the internet is that when the bad information gets on there, it's tough to get it off," Fauci said.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/finance/vanderbilt-more-doubles-operating-income-despite-setbacks'>
+Vanderbilt more than doubles operating income despite setbacks 
+</a></h3><p>The threat of losing its ability to treat Medicare patients wasn't a drag on the Vanderbilt University Medical Center's finances in the latter half of 2018. The Nashville not-for-profit academic medical center generated $74 million in operating income on nearly $2.2 billion in revenue in the six months ended Dec. 31, 2018, up from $30.6 million in operating income on $2 billion in revenue in the prior-year period. Expenses were up 6% in that time to $2.1 billion. The 8% year-over-year revenue spike is primarily due to increased patient service revenue, but increases in academic and research revenue also played a role, among other factors, Vanderbilt wrote in a narrative section of its financial results. Salaries, wages and benefits, drug costs and medical supplies were the primary drivers behind the higher expenses.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/government/white-house-exploring-hsas-cover-more-preventive-services'>
+White House exploring HSAs to cover more preventive services
+</a></h3><p>The Trump administration is exploring a proposal that would allow high-deductible plans with health savings accounts to cover preventive services such as providing free insulin, a White House advisor said. The proposal, outlined by White House healthcare advisor Brian Blase, would redefine what a preventive service is in a health savings account eligible high-deductible plan. "We should figure out a way that insulin for diabetics is considered a preventive service that people should use their HSA for," Blase said during an event sponsored by Roll Call in Washington D.C. on Wednesday. Blase didn't say when the proposal would be released. However, the Trump administration previously has explored the idea of expanding preventive services.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/government/new-mexico-seeks-oversight-short-term-health-insurance'>
+New Mexico seeks oversight of short-term health insurance
+</a></h3><p>Minimum standards for short-term health care plans would be set by New Mexico insurance regulators and not just the federal government under a bill passed by the state House of Representatives. The bill sponsored by Rep. Micaela Lara Cadena of Mesilla passed the House 67-0 on Monday and now moves to the state Senate for consideration. Congress' repeal of the tax penalty for individuals who forgo health insurance may lead more consumers toward short-term policies that can exclude coverage for pre-existing medical conditions or major benefits such as maternity care. The House-approved bill would give state insurance regulators authority to establish minimum standards for benefits under short-term and limited-benefit health plans in New Mexico. The state also would ensure a sufficient amount of premiums are spent on patient care.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/article/20190226/NEWS/190229936/pharma-ceos-survive-senate-grilling-with-few-concessions'>
+Pharma CEOs survive Senate grilling with few concessions
+</a></h3><p>Senate Finance Committee lawmakers extracted minimal policy concessions from seven top pharmaceutical CEOs Tuesday over hours of grilling. And they aren't likely to relieve tension with hospitals and insurers over drug prices. Following the hearing, stocks for most of the companies represented there rose slightly or held steady, while share prices for pharmacy benefit managers declined slightly. The CEOs broadly supported HHS' recent proposal to remove Medicare Part D safe harbor protections for pharmacy benefit manager rebates—but they were less vocal about promising to lower their prices should it be finalized. Some indicated they would want the commercial sector to follow suit, raising the specter of congressional action that insurers would oppose.</p><br><h3><a class='link' href='https://www.modernhealthcare.com/article/20190225/NEWS/190229945/tenet-in-exclusive-talks-over-potential-conifer-deal'>
 Tenet in exclusive talks over potential Conifer deal
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229934/texas-physician-hospital-administrator-convicted-in-20-million-fraud-scheme'>
-Texas physician, hospital administrator convicted in $20 million fraud scheme
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229935/fresenius-medical-care-closes-2-billion-nxstage-acquisition'>
-Fresenius Medical Care closes $2 billion NxStage acquisition
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229942/justice-department-asks-judge-to-approve-cvs-aetna-deal'>
-Justice Department asks judge to approve CVS/Aetna deal
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229938/louisiana-looking-for-new-medicaid-managed-care-companies'>
-Louisiana looking for new Medicaid managed-care companies
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229941/anthem-cigna-damages-trial-reveals-infighting'>
-Anthem/Cigna damages trial reveals infighting
-</a></h3><h3><a class='link' href='/article/20190226/NEWS/190229939/uconn-health-email-breach-compromises-data-from-326-000-patients'>
-UConn Health email breach compromises data from 326,000 patients
-</a></h3><h3><a class='link' href='/article/20190225/NEWS/190229952/healthcare-industry-execs-launch-opioid-treatments-centers-in-tenn-va'>
-Healthcare industry execs launch opioid treatments centers in Tenn., Va.
-</a></h3><h3><a class='link' href='/article/20190225/NEWS/190229946/hospitals-all-payer-margins-climb-in-2017-even-as-medicare-margins-slump'>
-Hospitals' all-payer margins climb in 2017 even as Medicare margins slump
-</a></h3><h3><a class='link' href='/article/20190225/NEWS/190229949/grassley-revives-probe-of-tax-exempt-hospitals'>
-Grassley revives probe of tax-exempt hospitals
-</a></h3><br><h1><a href='https://khn.org/stories/'>Kaiser Health News</a></h1><h3><a class='link' href='https://khn.org/news/lonely-anxious-depressed-maybe-your-dentist-can-help/'>Lonely? Anxious? Depressed? Maybe Your Dentist Can Help</a></h3><h3><a class='link' href='https://khn.org/news/biologist-faces-48512-bill-for-rabies-shot-after-cat-bite/'>Meow-ch! The $48,512 Cat Bite</a></h3><h3><a class='link' href='https://khn.org/news/cancers-complications-confusing-bills-maddening-errors-and-endless-phone-calls/'>Cancer’s Complications: Confusing Bills, Maddening Errors And Endless Phone Calls</a></h3><h3><a class='link' href='https://khn.org/news/pharma-execs-dig-in-for-a-fight-against-outraged-senators/'>Pharma Execs Dig In For A Fight Against Outraged Senators</a></h3><h3><a class='link' href='https://khn.org/news/prescription-drug-prices-senate-finance-committee-hearing-pharmaceutical-ceos-congress/'>Congress Squares Off With Pharma CEOs In Showdown Over High Drug Prices</a></h3><br><h1><a href='https://newsatjama.jama.com/category/the-jama-forum/'>JAMA Forum</a></h1><h3><a class='link' href='https://newsatjama.jama.com/2019/02/21/jama-forum-coordinating-community-planning-for-transportation-and-health/'>JAMA Forum: Coordinating Community Planning for Transportation and Health</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/02/13/jama-forum-the-6-functions-of-health-insurance/'>JAMA Forum: The 6 Functions of Health Insurance</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/02/06/jama-forum-shaking-things-up-in-california/'>JAMA Forum: Shaking Things Up in California</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/01/31/jama-forum-on-the-other-side-of-the-wall/'>JAMA Forum: On the Other Side of the “Wall”</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/01/23/jama-forum-immigrant-health-value-based-care-and-emergency-medicaid-reform/'>JAMA Forum: Immigrant Health, Value-Based Care, and Emergency Medicaid Reform</a></h3></div></body>
+</a></h3><p>(Updated at 1 p.m. ET) Tenet Healthcare Corp. is in exclusive talks over a potential deal for its revenue cycle subsidiary, Conifer Health Solutions, the hospital chain's CEO said on the company's earnings call Tuesday morning. Dallas-based Tenet has been shopping around Conifer for more than a year now, and executives have acknowledged the process is taking longer than expected. In announcing the exclusivity talks, Tenet CEO Ron Rittenmeyer said there is no assurance the development will result in a transaction. He said a confidentiality agreement precludes him from sharing further detail on the potential deal, including whether it's shaping up to be a sale, joint venture or another type of transaction.</p><br><br><h1 id=Politico><a href='https://www.politico.com/health-care'>Politico</a></h1><h3><a class='link' href='https://www.politico.com/story/2019/02/26/pharma-drug-prices-1220080'>Friction between drugmakers, GOP intensifies at hearing on pharma pricing</a></h3><h3><a class='link' href='https://www.politico.com/story/2019/02/26/house-democrats-medicare-for-all-1189139'>House Democrats to release 'Medicare for All' bill — without a price tag</a></h3><h3><a class='link' href='https://www.politico.com/story/2019/02/22/trump-planned-parenthood-abortion-title-x-1204937'>Trump abortion rule has both sides digging in</a></h3><h3><a class='link' href='https://www.politico.com/story/2019/02/14/democrats-obamacare-1170699'>Court allows House Democrats to join Obamacare's defense</a></h3><h3><a class='link' href='https://www.politico.com/story/2019/02/13/medicare-bill-health-care-1167664'>Push for Medicare buy-in picks up with '50 and over' bill</a></h3><br><h1 id=Vox><a href='https://www.vox.com/health-care'>Vox</a></h1><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/2/26/18239630/medicare-for-all-pramila-jayapal-bill'>Rep. Pramila Jayapal’s new Medicare-for-all bill, explained</a></h3><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/2/25/18239964/born-alive-abortion-survivors-protection-2019-sasse'>A Republican-backed bill to protect “abortion survivors” just failed. It still matters.</a></h3><h3><a class='link' href='https://www.vox.com/policy-and-politics/2019/1/14/18176707/congress-drug-prices-hearing-pharmaceutical-ceos'>Congress is grilling pharma CEOs. Here are 8 ideas for bringing down drug prices.</a></h3><h3><a class='link' href='https://www.vox.com/2018/2/27/16936638/er-bills-emergency-room-hospital-fees-health-care-costs'>Hospitals keep ER fees secret. We’re uncovering them.</a></h3><h3><a class='link' href='https://www.vox.com/2019/2/24/18236482/zuckerberg-hospital-surprise-bills-california'>After Vox story, California lawmakers introduce plan to end surprise ER bills</a></h3><br><h1 id=HAffairs><a href='https://www.healthaffairs.org/blog'>Health Affairs</a></h1><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190226.63748/full'>The Oversell And Undersell Of Digital Health</a></h3><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190225.558485/full'>Strategies For Health Systems To Engage The IT-Enabled Consumer</a></h3><h3><a class='link' href='https://www.healthaffairs.org/do/10.1377/hblog20190226.922368/full'>Medicaid Through The Crystal Ball Of Historical CMS Projections</a></h3><br><h1 id=Beckers><a href='https://www.beckershospitalreview.com/'>Becker's Hospital Review</a></h1><h3><a class='link' href='https://www.beckershospitalreview.com/healthcare-information-technology/wearables-smart-home-tech-fuel-increase-in-bestbuy-q4-earnings.html'>Wearables, smart home tech fuel increase in BestBuy Q4 earnings</a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/finance/california-bill-would-require-hospitals-to-give-180-day-public-notice-before-closing.html'>California bill would require hospitals to give 180-day public notice before closing </a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/finance/lewisgale-er-patients-cite-billing-problems-after-seeing-out-of-network-physicians.html'>LewisGale ER patients cite billing problems after seeing out-of-network physicians </a></h3><h3><a class='link' href='https://www.beckershospitalreview.com/quality/health-agencies-launch-task-force-to-develop-emergency-diagnostic-tests.html'>Health agencies launch task force to develop emergency diagnostic tests </a></h3><h3><a class='link' href='https://www.beckershospitalreview.comhttps://go.beckershospitalreview.com/five-things-every-consumer-expects-from-their-financial-experience?utm_campaign=VisitPay_Webinar_3.6.2019&utm_source=webtextad'>5 things consumers want from their healthcare financial experience.
+</a></h3><br><h1 id=HDive><a href='https://www.healthcaredive.com/'>Healthcare Dive</a></h1><h3><a class='link' href='https://www.healthcaredive.com/news/aca-plans-denied-nearly-1-in-5-in-network-claims-in-2017/549312/'>ACA plans denied nearly 1 in 5 in-network claims in 2017</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/sanofi-handed-payers-nearly-12b-in-drug-rebates-last-year/549363/'>Sanofi handed payers nearly $12B in drug rebates last year</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/nearly-300-breaches-last-year-exposed-115m-patient-records-bitglas-says/549296/'>Nearly 300 breaches last year exposed 11.5M patient records, Bitglas says</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/pharmas-day-in-congress-a-hearing-not-a-show/549321/'>Pharma's day in Congress: 'A hearing not a show'</a></h3><h3><a class='link' href='https://www.healthcaredive.com/news/crossover-health-snags-online-only-primary-care-platform-sherpaa-health/549295/'>Crossover Health snags online-only primary care platform Sherpaa Health</a></h3><br><h1 id=Kaiser><a href='https://khn.org/stories/'>Kaiser Health News</a></h1><h3><a class='link' href='https://khn.org/news/theres-a-new-medicare-for-all-bill-in-the-house-why-does-it-matter/'>There’s A New ‘Medicare-For-All’ Bill In The House. Why Does It Matter?</a></h3><h3><a class='link' href='https://khn.org/news/detention-centers-in-california-lack-oversight-and-proper-care-reports-find/'>Detention Centers In California Lack Oversight And Proper Care, Reports Find</a></h3><h3><a class='link' href='https://khn.org/news/lonely-anxious-depressed-maybe-your-dentist-can-help/'>Lonely? Anxious? Depressed? Maybe Your Dentist Can Help</a></h3><h3><a class='link' href='https://khn.org/news/biologist-faces-48512-bill-for-rabies-shot-after-cat-bite/'>Meow-ch! The $48,512 Cat Bite</a></h3><h3><a class='link' href='https://khn.org/news/cancers-complications-confusing-bills-maddening-errors-and-endless-phone-calls/'>Cancer’s Complications: Confusing Bills, Maddening Errors And Endless Phone Calls</a></h3><br><h1 id=JAMA><a href='https://newsatjama.jama.com/category/the-jama-forum/'>JAMA Forum</a></h1><h3><a class='link' href='https://newsatjama.jama.com/2019/02/27/jama-forum-deprescribing-policies-time-for-a-fresh-approach/'>JAMA Forum: Deprescribing Policies: Time for a Fresh Approach</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/02/21/jama-forum-coordinating-community-planning-for-transportation-and-health/'>JAMA Forum: Coordinating Community Planning for Transportation and Health</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/02/13/jama-forum-the-6-functions-of-health-insurance/'>JAMA Forum: The 6 Functions of Health Insurance</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/02/06/jama-forum-shaking-things-up-in-california/'>JAMA Forum: Shaking Things Up in California</a></h3><h3><a class='link' href='https://newsatjama.jama.com/2019/01/31/jama-forum-on-the-other-side-of-the-wall/'>JAMA Forum: On the Other Side of the “Wall”</a></h3></div></body>
         </html>

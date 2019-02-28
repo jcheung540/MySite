@@ -10,8 +10,8 @@
 
 @media only screen and (min-width:601px){
   .all {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 25%;
+    padding-right: 25%;
     
   }
 }
@@ -26,7 +26,6 @@
 
 body {
   margin-bottom:20%;
-  padding-top: 5%;
 }
 
 h1 {
@@ -38,41 +37,134 @@ a {
   text-decoration: none;
 }
 
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin-left: 0;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .link:hover {
   color: blue;
 }
-        </style>
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+                </style>
         <title>HEALTH SUMMARIES</title>
         </head>
         <body>
-        <div class = 'topnav'>
-        <a class='active' href='/'> Front Page</a>
-        <a href="/news">News</a>
-        <a href="/health">Health</a>
-        <a href="/pharma">Pharma</a>
+   <div class="navbar">
+<div class="navbar">
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/">Home
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
         </div>
-        <div class='all'><h4>2019-02-27 07:33</h4><h1><a href='https://www.foxnews.com/'>Fox News</a></h1><h3><a class='link' href='https://www.foxnews.com/opinion/ex-cia-station-chief-cia-gives-trump-valuable-insights-into-kim-and-north-korea'>Ex-CIA station chief: US spies prepped Trump with key details, psych profile on Kim</a></h3><p>The North Korean dictator has carried out ruthless internal purges of his government’s inner circle as well as executions of his own family members – including his half-brother Kim Jong Nam in Malaysia in 2017. As President Trump and North Korean leader Kim Jong Un square off in their high-stakes negotiations in Hanoi this week, Kim has an important advantage: an enormous amount of information is publicly available about Trump and his positions on key issues. The U.S. president draws intense media coverage, tweets frequently and speaks often to reporters. And – as happens during the administration of every American president – our free press reports on many developments that the U.S. government would no doubt prefer to keep quiet. Simply reading and watching U.S. media reports gives the North Koreans great insights into our president and U.S. policies.</p><br><h3><a class='link' href='https://www.foxnews.com/politics/ninth-circuit-gets-another-trump-picked-judge-after-white-house-bypasses-consultation-with-dems'>Liberal 9th Circuit gets new Trump-picked judge after WH bypasses Dems</a></h3><p>The Senate on Tuesday confirmed President Trump's nominee to be a judge on the liberal 9th Circuit Court of Appeals in a party-line vote -- and, in a historic snub, the White House ignored the input of the judge's two Democratic home-state senators in the process. The aggressive and unprecedented move to bypass the traditional "blue slip" consultation process and plow ahead with the confirmation comes as the Trump administration seeks to systematically erode left-wing dominance on the key appellate court, which Trump has called "disgraceful" and politically biased. With a sprawling purview representing nine Western states, the appellate court has long been a thorn in the side of the Trump White House, with rulings against his travel ban policy and limits on funding to "sanctuary cities." A lawsuit is currently pending before the 9th Circuit concerning Trump's emergency declaration over border security -- and Trump had sarcastically predicted that Democrats would purposefully file suit in the San Francisco-based appellate court to improve their odds.</p><br><h3><a class='link' href='https://www.foxnews.com/politics/cohen-to-accuse-trump-of-knowledge-in-wikileaks-leak-plot-call-him-a-racist-conman'>Cohen to deny direct evidence linking Trump campaign to Russia collusion</a></h3><p>In his testimony before the House Oversight and Reform Committee on Wednesday, Michael Cohen will accuse his former client, President Trump, of knowing that his adviser Roger Stone was reaching out to WikiLeaks concerning the publication of stolen Democratic National Committee emails. But Cohen apparently will not claim Trump directed those communications, and Cohen will specifically assert that he lacks direct evidence of improper collusion by the Trump campaign with Russia -- a significant admission, given Cohen's longtime status as the president's former top lawyer and fixer. "Questions have been raised about whether I know of direct evidence that Mr. Trump or his campaign colluded with Russia," Cohen will testify. "I do not. I want to be clear.</p><br><h3><a class='link' href='https://www.foxnews.com/us/california-fire-department-shows-what-happens-to-cars-parked-in-front-of-hydrants'>PICS: California fire department schools drivers who park next to hydrants</a></h3><p>Fire officials in California reminded drivers on Tuesday that vehicles parked front of a fire hydrant during an emergency are likely to feel a permanent breeze. The Anaheim Fire & Rescue Department had responded to a residential fire when they found a vehicle parked too close to a hydrant. The department later tweeted photos of a hose running through the smashed-out back passenger windows of the car, which was parked along a curb painted a stark red. “Ever wonder what happens when a car is parked in front of a fire hydrant and a fire breaks out?” the tweet reads. “Is a closer parking spot worth the broken windows and the citation and towing fees to @AnaheimPD?” The Anaheim police department, who also responded to the fire, tweeted that they had to run the hose line through the vehicle’s rear windows in order to battle the blaze.</p><br><h3><a class='link' href='https://www.foxnews.com/entertainment/pete-davidson-boots-heckler-who-joked-about-mac-millers-death-report'>Pete Davidson confronts heckler at live show, threatens to walk off stage</a></h3><p>Pete Davidson had zero tolerance for a heckler who reportedly made light of rapper Mac Miller’s death. According to Page Six, the “Saturday Night Live” funnyman was performing at the South Orange Performing Arts Center in New Jersey on Monday night when he began the set up for a joke by saying, “So a funny thing happened to me recently in my apartment … my friend died of a heart attack.” The outlet reported Tuesday that before Davidson, 25, could get to the punchline, the unruly showgoer shouted out, “Mac Miller!” Miller died of an accidental drug overdose in September at 26. The “Swimming” rapper dated Davidson’s ex-fiance, Ariana Grande, before Davidson did. The remark didn’t go over well with Davidson; the comedian is said to have stopped his set mid-joke in order to locate the jeerer. “Pete calmly stops his routine and asks the audience to ID the dude that yelled out and that he is going to have to leave,” an onlooker told the outlet.</p><br><br><h1><a href='https://www.nbcnews.com/'>MSNBC</a></h1><h3><a class='link' href='https://www.nbcnews.com/news/us-news/kelsey-berreth-case-colorado-police-search-landfill-missing-woman-s-n976586'>Colorado police search landfill for missing woman's remains</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/world/cairo-train-station-fire-kills-least-20-injures-dozens-n976581'>Train station fire kills at least 20, injures dozens in Cairo</a></h3><h3><a class='link' href='https://www.nbcnews.com/mach/science/spacex-readies-crew-dragon-spacecraft-first-test-flight-space-station-ncna976386'>SpaceX readies Crew Dragon spacecraft for first test flight to the space station</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/world/iran-s-rouhani-rejects-resignation-foreign-minister-zarif-n976571'>Iran's president rejects foreign minister's resignation</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/us-news/california-man-sentenced-more-15-years-trying-help-terrorists-n976531'>Calif. man sentenced to more than 15 years for trying to help terrorists</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/world/nigeria-s-president-declared-winner-second-term-after-bumpy-vote-n976556'>Nigeria's president wins second term</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/weather/evacuations-ordered-waters-rise-storm-pummeled-northern-california-n976536'>Evacuations ordered as waters rise in storm-pummeled California</a></h3><h3><a class='link' href='https://www.nbcnews.com/news/world/telemundo-journalist-abducted-questioned-venezuela-covering-detainment-univision-crew-n976521'>Journalist abducted and questioned for hours in Venezuela, network says</a></h3><br><h1><a href='https://www.cnn.com/'>CNN</a></h1><h3><a class='link' href='https://www.cnn.com/2019/02/27/india/india-pakistan-strikes-escalation-intl/index.html'>Pakistan shot down two Indian jets, government claims, as border crisis escalates</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/africa/cairo-train-station-fire-intl/index.html'>Breaking 20 killed in train station fire in Cairo</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/26/politics/aoc-ivanka-trump-minimum-wage/index.html'>Alexandria Ocasio-Cortez fires back at Ivanka Trump on Twitter</a></h3><h3><a class='link' href='https://www.cnn.com/videos/politics/2019/02/26/ivanka-trump-american-workers-green-new-deal-sot-lead-vpx.cnn'>Panelist: Ivanka Trump has no clue what she's talking about</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/us/amtrak-moment-by-moment/index.html'>Journey that stranded 200 train passengers felt 'like a nightmare'</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/us/mother-daughter-charged-killings-pennsylvania/index.html'>A cramped apartment hid broken glass, overturned furniture and five bodies</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/us/ny-trains-car-collision/index.html'>3 people are dead after their car was hit by two NY trains going in opposite directions </a></h3></div></body>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/news">General News
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fox">Fox</a>
+      <a href="#MSNBC">MSNBC</a>
+      <a href="#CNN">CNN</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href='/health'>Health Care News 
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#NEJM">NEJM Catalyst</a>
+      <a href="#MHealthcare">Modern Healthcare</a>
+      <a href="#Politico">Politico</a>
+      <a href="#Vox">Vox</a>
+      <a href="#HAffairs">Health Affairs</a>
+      <a href="#Beckers">Becker's Hospital Review</a>
+      <a href="#HDive">Healthcare Dive</a>
+      <a href="#Kaiser">Kaiser Health News</a>
+      <a href="#JAMA">JAMA Forum</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/pharma">Pharma News
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fierce">Fierce Biotech</a>
+      <a href="#BioSpace">BioSpace</a>
+
+    </div>
+  </div> 
+</div>
+        </div>
+
+        </div>
+        <div class='all'><h4>2019-02-28 02:19</h4><h1 id=Fox><a href='https://www.foxnews.com/'>Fox News</a></h1><h3><a class='link' href='https://www.foxnews.com/politics/kim-open-denuclearization-trump-good-progress-summit'>'No agreement' reached during Trump-Kim's second summit, signing ceremony apparently scrapped</a></h3><p>I won't make predictions. But I instinctively feel that a good outcome will be produced." Talks between President Trump and North Korean leader Kim Jong Un wrapped up significantly earlier than expected on Thursday, and the White House announced that no agreement had been reached between the leaders. A planned signing ceremony set for Thursday afternoon in Hanoi, Vietnam, was scrubbed, and Trump was set to take the stage within minutes for a solo press conference. "No agreement was reached at this time, but their respective teams look forward to meeting in the future," White House press secretary Sarah Sanders said in a statement.</p><br><h3><a class='link' href='https://www.foxnews.com/politics/kamala-harris-mischaracterized-sf-policy-on-undocumented-minors-cnn-says'>Harris 'mischaracterized' past SF policy on undocumented minors: report</a></h3><p>U.S. Sen. Kamala Harris “mischaracterized” a 2008 San Francisco policy regarding undocumented minors when she participated in a CNN podcast earlier this week, the network asserted Wednesday. Harris -- a California Democrat who is seeking the party's 2020 presidential nomination -- made the comments while speaking to an audience in Iowa on Sunday on “Political Party Live,” the network reported. According to CNN, host Misty Rebik asked Harris about a past report by the network that claimed Harris backed a San Francisco policy of reporting arrests of undocumented juveniles to U.S. Immigration and Customs Enforcement. Harris responded by saying the notification of ICE was an “unintended consequence” of the city policy, enacted by then-Mayor Gavin Newsom. (Newsom is now governor of California, while Harris is a U.S. senator after being the district attorney of San Francisco from 2004-2011 and then attorney general of California from 2011-2017.)</p><br><h3><a class='link' href='https://www.foxnews.com/entertainment/actress-ellen-page-talks-jussie-smollett-controversy-i-had-no-reason-to-doubt-him'>Actress who lashed out at GOP after Smollett claims reacts to alleged hoax</a></h3><p>Actress Ellen Page reacted to the Jussie Smollett controversy weeks after bashing the White House and Vice President Pence, saying she had “no reason to doubt” the "Empire" star was the victim of a hate crime after he made his claims. In a guest column featured in The Hollywood Reporter, Page said that the dispute over whether Smollett staged his own attack shouldn’t distract people from the “very real” violence that the LGBTQ community faces. “While the media and public debate the case and await more information, we must not lose sight of the very real, endemic violence that LGBTQ+ people, people of color and other underrepresented communities face every day,” her column read. “The conversation around Jussie Smollett has led us all to examine hate violence and its implications and aftermath. I had no reason to doubt Jussie.” Weeks earlier, Page, who identifies as gay, used her appearance on “The Late Show with Stephen Colbert” to criticize Pence in the wake of Smollett's claims.</p><br><h3><a class='link' href='https://www.foxnews.com/us/husband-of-michigan-tv-meteorologist-who-committed-suicide-breaks-silence'>Husband of Michigan TV meteorologist who committed suicide breaks silence</a></h3><p>Meteorologist Jessica Starr reportedly didn’t suffer from depression or take antidepressants before undergoing eye surgery and ultimately committing suicide late last year, her husband has claimed. "Prior to the procedure, Jessica was completely normal, very healthy. There was no depression, there was no antidepressants, there was no underlying issue," her husband Dan Rose recently told Fox 2 Detroit, the TV station where she used to work. "I want to make that absolutely clear. Jessica was incredibly normal - there wasn't a long battle with depression.” Word of Starr’s death in December was announced on air by Fox 2 Detroit, where she had worked since 2012.</p><br><h3><a class='link' href='https://www.foxnews.com/travel/emotional-support-animal-mauls-5-year-old-at-portland-airport-lawsuit-claims'>'Emotional support animal' mauls 5-year-old girl at airport, lawsuit claims</a></h3><p>WARNING: Graphic image below A mom has filed a $1.1 million lawsuit against the owner of a pit bull and Alaska Airlines after the animal allegedly mauled her 5-year-old’s face at the Portland International Airport. The lawsuit, filed Monday in Multnomah County by Mirna Gonzalez on behalf of her daughter, Gabriela Gonzalez, claims Michelle Brannan, the dog’s owner, should have known her animal had “vicious propensities” and that Alaska Airlines allowed her to bring a dangerous dog into the gate waiting area without being confined or trained. According to the suit, the incident took place Dec. 18, 2017, while Gabriella Gonzalez was waiting at Gate C7 with her family for a flight to Texas at the Portland hub. Gabriella, then aged 5, was waiting at the gate when Brannan entered the area with her pit bull, which was not kept in a crate, kennel or other secure container, the lawsuit claims. The child allegedly gained permission from Brannan to pet the dog.</p><br><br><h1 id=MSNBC><a href='https://www.nbcnews.com/'>MSNBC</a></h1><h3><a class='link' href='https://www.nbcnews.com/news/us-news/doctor-shot-patient-wheelchair-florida-va-hospital-fbi-says-n977506'>Doctor shot by patient in wheelchair in VA hospital, FBI says</a></h3><p>A doctor at a Florida hospital for veterans was shot by a patient, a double amputee in a wheelchair, as the patient was taken to the emergency room Wednesday evening, officials said. Larry Ray Bon, 59, of Michigan, opened fire with a handgun about 6:20 p.m. at West Palm Beach VA Medical Center, Justin Fleck, assistant special agent in charge at the Miami FBI Office, said at a news conference Wednesday night. The doctor was struck while attempting to subdue the man. "It was very brave,” Fleck said of the doctor, who has not been identified. “He was pretty heroic and probably saved a lot of lives."</p><br><h3><a class='link' href='https://www.nbcnews.com/news/us-news/12-treated-after-strange-odor-forces-alaska-airlines-flight-divert-n977476'>12 treated after strange odor on Alaska Airlines flight</a></h3><p>A Seattle-bound Alaska Airlines flight from Chicago was diverted to Minneapolis-St. Paul International Airport on Wednesday night after a strange odor was detected and a dozen people on board reported breathing issues, officials said. The source of the odor on the Boeing 737-900, which had 144 on board, has not been determined. Four crew members were hospitalized, and another six were examined after the 7:17 p.m. landing, the airline said in a statement. Two passengers were also evaluated at the airport, Alaska Airline said. A spokesman for the airport, Patrick Hogan, said by email that the patients complained of "respiratory issues."</p><br><h3><a class='link' href='https://www.nbcnews.com/news/world/trump-begins-one-one-kim-jong-un-tempering-expectations-n977466'>North Korea nuclear summit ends abruptly with no deal</a></h3><p>HANOI, Vietnam — No deal. President Donald Trump and North Korean dictator Kim Jong Un abruptly broke off a nuclear summit here Thursday, canceling a planned signing ceremony for a pact. "No agreement was reached at this time, but their respective teams look forward to meeting in the future," White House press secretary Sarah Sanders said in a statement. Sanders called the meetings "good and constructive" and noted that Trump and Kim "discussed various ways to advance denuclearization and economic driven concepts. Trump, who had expressed optimism for the summit and said he was not in a hurry to make a comprehensive pact with Kim, left the meeting early to conduct a news conference before departing Vietnam for Washington.</p><br><h3><a class='link' href='https://www.nbcnews.com/storyline/measles-outbreak/measles-outbreaks-lawmakers-tackle-vaccine-misinformation-conspiracies-n977261'>Measles outbreaks: Lawmakers tackle anti-vaccine conspiracies</a></h3><p>As cases of measles continue to rise across the United States, lawmakers met Wednesday to confront the growing public health threat. The sometimes raucous hearing, held by the House Committee on Energy and Commerce, laid out one of the main challenges: stopping the spread of conspiracy theories and misinformation about the measles, mumps and rubella vaccine that have contributed to vaccine-hesitancy in many communities. At least twice, Rep. Diana DeGette, D-Colo., stopped the hearing when audience members, both for and against immunization, shouted down speakers over vaccine safety. Dr. Anthony Fauci, director of the National Institute of Allergies and Infectious Diseases at the National Institutes of Health, acknowledged that there hasn’t been effective countering of the anti-vaccine movement. “Misinformation is an important problem,” Fauci said.</p><br><h3><a class='link' href='https://www.nbcnews.com/news/us-news/ex-n-j-superintendent-who-defecated-public-says-police-shouldn-n976996'>Superintendent who defecated in public says police shouldn't have released mugshot</a></h3><p>A former school superintendent who was charged with defecating on a high school’s track has asked New Jersey’s attorney general to investigate whether police acted unlawfully when they took his mugshot and released it to the media. The Holmdel Township Police Department's "actions were the height of willful misconduct, professional irresponsibility and a total disdain for the law,” attorney Matthew Adams said Monday in a letter to Attorney General Gurbir Grewal. Thomas Tramaglini was charged with lewdness, littering and defecating in public in May after police said he repeatedly defecated on the Holmdel High School track. Tramaglini pleaded guilty in October to relieving himself in public once in the midst of a medical emergency and paid a $500 fine. Tramaglini submitted to the court and prosecutor's office proof of a medical condition known as runner's diarrhea that often affects distance runners and that is brought on from acute blood flow during exercise.</p><br><h3><a class='link' href='https://www.nbcnews.com/politics/white-house/trump-inaugural-committee-hit-another-subpoena-n977431'>Trump inaugural committee hit with another subpoena</a></h3><p>President Donald Trump's inaugural committee is facing a new legal threat after the attorney general for Washington, D.C., issued a subpoena for documents on Wednesday, according to a committee spokesperson and a source familiar with the matter. The legal action means three government agencies are known to be scrutinizing the finances of the inaugural committee after it raised and spent a record $107 million. The revelation of the new investigation, which was first reported by The New York Times, comes three weeks after the U.S. attorney's office in the Southern District of New York subpoenaed the committee. New Jersey's attorney general is also probing how it spent the massive haul of cash. An inaugural committee spokesperson released a brief statement acknowledging that it had received the subpoena from the office of D.C. Attorney General Karl Racine.</p><br><h3><a class='link' href='https://www.nbcnews.com/news/latino/judge-orders-texas-stop-removing-voters-rolls-slams-mess-state-n977376'>Judge orders Texas to stop removing voters from rolls</a></h3><p>AUSTIN, Texas — A federal judge declared there is no widespread voter fraud as he took steps to block Texas officials from removing people from voter rolls or making them prove they are U.S. citizens. U.S. District Judge Fred Biery ruled Wednesday that the state “created this mess” and ordered officials in the 18 counties named as defendants not to remove anyone from the voter registration rolls without his approval. “As Robert Fulghum taught in ‘All I Really Need to Know I Learned in Kindergarten,’ always put things back where we found them and clean up our own messes,” the judge said in his order. He also ordered acting Texas Secretary of State David Whitley to advise officials in the rest of the 254 counties to also not remove anyone from the lists without the court’s approval.</p><br><h3><a class='link' href='https://www.nbcnews.com/tech/tech-news/apply-lay-190-employees-self-driving-car-division-n977386'>Apple to lay off 190 employees from self-driving car division</a></h3><p>Apple is set to terminate 190 jobs in its self-driving car division later this spring, according to a letter issued earlier this month to the California Employment Development Department. The news of the layoffs was broken last month by CNBC, but the formal notice was first reported Wednesday by the San Francisco Chronicle. Apple spokesman Tom Neumayr confirmed the announcement to NBC News. The affected jobs — most of which are engineering positions — are in Apple facilities in Santa Clara and Sunnyvale, near the company’s main headquarters in Cupertino. The terminations are effective as of April 16.</p><br><br><h1 id=CNN><a href='https://www.cnn.com/'>CNN</a></h1><h3><a class='link' href='https://www.cnn.com/2019/02/27/politics/cohen-testimony-trump-legal-troubles-southern-district-new-york/index.html'>Cohen's testimony escalates Trump's legal troubles in New York</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/politics/michael-cohen-testimony-lessons/index.html'>Analysis: 8 things we learned from Cohen today</a></h3><h3><a class='link' href='https://www.cnn.com/videos/politics/2019/02/28/michael-cohen-testifies-mh-orig.cnn'>Theatrics aside, here are the moments that matter</a></h3><h3><a class='link' href='https://www.cnn.com/videos/politics/2019/02/27/michael-cohen-testimony-closing-remarks-message-trump-supporters-sot-vpx.cnn'>Cohen's closing: I fear Trump won't leave peacefully</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/opinions/trumps-base-wont-desert-him-over-cohen-but-thats-not-the-key-zelizer/index.html'>Opinion: Trump's base won't defect, but that's not the key thing</a></h3><h3><a class='link' href='https://www.cnn.com/2019/02/27/politics/gallery/michael-cohen-testimony/index.html'>In pictures: Cohen on Capitol Hill</a></h3><h3><a class='link' href='https://www.cnn.com/videos/politics/2019/02/27/alexandria-ocasio-cortez-michael-cohen-testimony-vpx.cnn'>See Ocasio-Cortez's exchange with Michael Cohen</a></h3></div></body>
         </html>

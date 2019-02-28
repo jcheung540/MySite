@@ -8,8 +8,8 @@
 
 @media only screen and (min-width:601px){
   .all {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 25%;
+    padding-right: 25%;
     
   }
 }
@@ -24,7 +24,6 @@
 
 body {
   margin-bottom:20%;
-  padding-top: 5%;
 }
 
 h1 {
@@ -36,41 +35,134 @@ a {
   text-decoration: none;
 }
 
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin-left: 0;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .link:hover {
   color: blue;
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
         </style>
         <title>HEALTH SUMMARIES</title>
         </head>
         <body>
-        <div class = 'topnav'>
-        <a class='active' href='/'> Front Page</a>
-        <a href="/news">News</a>
-        <a href="/health">Health</a>
-        <a href="/pharma">Pharma</a>
+   <div class="navbar">
+   <div class="navbar">
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/">Home
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
         </div>
-        <div class='all'><h4>2019-02-27 07:33</h4><h1><a href='https://www.fiercebiotech.com/'>Fierce Biotech</a></h1><h3><a class='link' href='https://www.fiercebiotech.com/biotech/immunomedics-could-be-facing-longer-lead-drug-delay-as-ceo-quits'>Immunomedics could face longer lead drug delay as CEO quits</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/biotech/compugen-cuts-35-workforce-to-push-cash-runway-into-mid-2020'>Compugen cuts 35% of workforce to push cash runway into mid-2020</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/medtech/ultrasound-catheter-maker-shockwave-medical-files-75m-ipo'>Ultrasound catheter maker Shockwave Medical files $75M IPO</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/biotech/syncona-novartis-back-il-2-immuno-oncology-startup-anaveon'>Syncona, Novartis back IL-2 immuno-oncology startup Anaveon</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/biotech/amicus-plans-to-center-its-gene-therapy-r-d-philadelphia-new-lab'>Amicus to build a new gene therapy R&D center in Philadelphia</a></h3><br><h1><a href='https://www.biospace.com/news/'>BioSpace</a></h1><h3><a class='link' href='https://www.biospace.com/article/top-5-biotech-companies-to-emerge-from-bay-area-incubators/'>Top 5 Biotech Companies to Emerge From Bay Area Incubators</a></h3><h3><a class='link' href='https://www.biospace.com/article/how-to-become-a-top-performer-when-you-didn-t-get-enough-training/'>How to Become a Top Performer When You Didn’t Get Enough Training</a></h3><h3><a class='link' href='https://www.biospace.com/article/releases/media-alert-renowned-healthcare-leaders-using-artificial-intelligence-to-transform-the-delivery-of-care-featured-at-pepperdine-graziadio-future-of-healthcare-symposium/'>MEDIA ALERT: Renowned Healthcare Leaders Using Artificial Intelligence to Transform the Delivery of Care Featured at Pepperdine Graziadio Future of Healthcare Symposium</a></h3><h3><a class='link' href='https://www.biospace.com/article/releases/the-medicines-company-reports-fourth-quarter-and-full-year-2018-business-and-financial-results/'>The Medicines Company Reports Fourth-Quarter and Full Year 2018 Business and Financial Results</a></h3><h3><a class='link' href='https://www.biospace.com/article/releases/novanta-announces-financial-results-for-the-fourth-quarter-and-full-year-2018/'>Novanta Announces Financial Results for the Fourth Quarter and Full Year 2018</a></h3></div></body>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/news">General News 
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fox">Fox</a>
+      <a href="#MSNBC">MSNBC</a>
+      <a href="#CNN">CNN</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn"><a href='/health'>Health Care News
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#NEJM">NEJM Catalyst</a>
+      <a href="#MHealthcare">Modern Healthcare</a>
+      <a href="#Politico">Politico</a>
+      <a href="#Vox">Vox</a>
+      <a href="#HAffairs">Health Affairs</a>
+      <a href="#Beckers">Becker's Hospital Review</a>
+      <a href="#HDive">Healthcare Dive</a>
+      <a href="#Kaiser">Kaiser Health News</a>
+      <a href="#JAMA">JAMA Forum</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="/pharma">Pharma News 
+      <i class="fa fa-caret-down"></i>
+    </a></button>
+    <div class="dropdown-content">
+      <a href ="#Fierce">Fierce Biotech</a>
+      <a href="#BioSpace">BioSpace</a>
+
+    </div>
+  </div> 
+</div>
+        </div>
+
+        </div>
+        <div class='all'><h4>2019-02-28 02:19</h4><h1 id=Fierce><a href='https://www.fiercebiotech.com/'>Fierce Biotech</a></h1><h3><a class='link' href='https://www.fiercebiotech.com/biotech/axial-nets-25m-for-clinical-gut-brain-axis-studies-into-autism-and-parkinson-s-disease'>Axial nets $25M for gut-brain studies in autism and Parkinson’s</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/research/reinvigorating-car-t-cells-by-targeting-a-family-proteins'>Reinvigorating CAR-T cells by targeting a family of proteins</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/medtech/illuminoss-launches-patient-specific-light-activated-bone-bonder-for-fragile-broken-arms'>IlluminOss launches light-activated bone bonder for broken arms</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/biotech/sarepta-pulls-trigger-165m-myonexus-buy'>Sarepta pulls the trigger on $165M Myonexus buy</a></h3><h3><a class='link' href='https://www.fiercebiotech.com/medtech/fda-clears-medtronic-nerve-ablation-device-for-chronic-pain'>FDA clears Medtronic nerve ablation device for chronic pain</a></h3><br><h1 id=BioSpace><a href='https://www.biospace.com/news/'>BioSpace</a></h1><h3><a class='link' href='https://www.biospace.com/article/biospace-global-roundup-feb-28/'>BioSpace's Global Biopharma Roundup: Feb. 28</a></h3><h3><a class='link' href='https://www.biospace.com/article/do-you-think-you-re-being-set-up-for-failure-at-work-here-s-how-to-handle-it-/'>Do You Think You’re Being Set up for Failure at Work?  Here’s How to Handle It!</a></h3><h3><a class='link' href='https://www.biospace.com/article/sarepta-buys-myonexus-therapeutics-for-165-million/'>Gene Therapy Market Heats up as Sarepta Buys Myonexus for $165 Million</a></h3><h3><a class='link' href='https://www.biospace.com/article/gang-of-7-pharma-execs-grilled-by-congress/'>Gang of 7 Pharma Execs Grilled by Congress</a></h3><h3><a class='link' href='https://www.biospace.com/article/cytomx-stock-plunges-as-bristol-myers-squibb-reprioritizes-collaboration/'>Bristol-Myers Squibb Pulls 3 Programs out of CytomX Partnership</a></h3></div></body>
         </html>
