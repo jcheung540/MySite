@@ -111,6 +111,22 @@ def Scrape_Politico():
     Spliced_Title = Title[1:6]
     return(Spliced_Title, Spliced_Link,url)
 
+def Get_Text_Politico(Link_List):
+    Link_Catalyst = Link_List[1]
+    Articles = []
+    Strong = []
+    for article in Link_Catalyst:
+        driver.get(article)
+        driver.implicitly_wait(30)
+        html1 = driver.page_source
+        soup1 = BeautifulSoup(html1, 'lxml')
+        article_text = ""
+        all_ps = soup1.select('p')
+        for p in all_ps[1:-3]:
+            article_text += p.get_text() + ' '
+        Articles.append(article_text)
+    return(Articles)
+
 def Scrape_Vox():
     url = 'https://www.vox.com/health-care'
     driver.get(url)
@@ -249,6 +265,22 @@ def Scrape_Fierce():
         Title.append(link.get_text())
     return(Title,Link,url)
 
+def Get_Text_Fierce(Link_List):
+    Link_Catalyst = Link_List[1]
+    Articles = []
+    Strong = []
+    for article in Link_Catalyst:
+        driver.get(article)
+        driver.implicitly_wait(30)
+        html1 = driver.page_source
+        soup1 = BeautifulSoup(html1, 'lxml')
+        article_text = ""
+        all_ps = soup1.select('p')
+        for p in all_ps:
+            article_text += p.get_text() + ' '
+        Articles.append(article_text)
+    return(Articles)
+
 def Scrape_Biospace():
     url = 'https://www.biospace.com/news/'
     driver.get(url)
@@ -263,6 +295,22 @@ def Scrape_Biospace():
         Spliced_Link = Link[0:5]
         Spliced_Title = Title[0:5]
     return(Spliced_Title, Spliced_Link, url)
+
+def Get_Text_Biospace(Link_List):
+    Link_Biospace = Link_List[1]
+    Articles = []
+    Strong = []
+    for article in Link_Biospace:
+        driver.get(article)
+        driver.implicitly_wait(30)
+        html1 = driver.page_source
+        soup1 = BeautifulSoup(html1, 'lxml')
+        article_text = ""
+        all_ps = soup1.select('p')
+        for p in all_ps[2:]:
+            article_text += p.get_text() + ' '
+        Articles.append(article_text)
+    return(Articles)
 
 def Scrape_Fox():
     url = 'https://www.foxnews.com/'
@@ -757,6 +805,7 @@ a {
 Health_Affairs = Scrape_Health_Affairs()
 Healthcare_Dive = Scrape_Healthcare_Dive()
 Politico = Scrape_Politico()
+Politico_Articles = Get_Text_Politico(Politico)
 Vox = Scrape_Vox()
 NEJM_Catalyst = Scrape_NEJM_Catalyst()
 NEJM_Catalyst_Articles = Get_Text_Catalyst(NEJM_Catalyst)
@@ -766,7 +815,9 @@ Modern_Articles = Get_Text_Modern(Modern)
 KHN = Scrape_KHN()
 JAMA = Scrape_JAMA()
 Fierce = Scrape_Fierce()
+Fierce_Articles = Get_Text_Fierce(Fierce)
 Biospace = Scrape_Biospace()
+Biospace_Articles = Get_Text_Biospace(Biospace)
 Fox = Scrape_Fox()
 Fox_Articles = Get_Text_Fox(Fox)
 MSNBC = Scrape_MSNBC()
@@ -779,7 +830,7 @@ def Health_Combinator():
     Page_Catalyst = Summary_Writer(NEJM_Catalyst, "NEJM Catalyst", NEJM_Catalyst_Articles,'NEJM')
     Page_Health_Affairs = HTML_Writer(Health_Affairs,'Health Affairs','HAffairs')
     Page_Healthcare_Dive = HTML_Writer(Healthcare_Dive,'Healthcare Dive','HDive') 
-    Page_Politico = HTML_Writer(Politico, 'Politico','Politico')
+    Page_Politico = Summary_Writer(Politico, 'Politico',Politico_Articles, 'Politico')
     Page_Vox = HTML_Writer(Vox, 'Vox','Vox')
     
     Page_Beckers = HTML_Writer(Beckers, "Becker's Hospital Review","Beckers")
@@ -790,8 +841,8 @@ def Health_Combinator():
     return(Page)
 
 def Pharma_Combinator():
-    Page_Fierce = HTML_Writer(Fierce, 'Fierce Biotech','Fierce')
-    Page_Biospace = HTML_Writer(Biospace, 'BioSpace','BioSpace')
+    Page_Fierce = Summary_Writer(Fierce, 'Fierce Biotech',Fierce_Articles,'Fierce')
+    Page_Biospace = Summary_Writer(Biospace, 'BioSpace', Biospace_Articles, 'BioSpace')
     Page = Page_Fierce[0]+Page_Fierce[2]+Page_Fierce[1]+Page_Fierce[3]+'<br>'+Page_Biospace[1]+Page_Biospace[3]+Page_Biospace[4]
     return(Page)
 
@@ -807,7 +858,7 @@ def HTML_Saver(Page,Name):
     HTML = open(File_Name, 'wb')
     HTML.write(Page.encode('utf-8'))
     HTML.close()
-    # driver.get('file:///Users/jamescheung/'+File_Name)
+
 
 Page_Health = Health_Combinator()
 HTML_Saver(Page_Health,'Health') 
