@@ -12,6 +12,7 @@ import heapq
 from textblob import TextBlob
 
 def Summarizer(article_text):
+    black_list = ['would','said']
     if article_text == "":
         return ""
     else:
@@ -36,10 +37,11 @@ def Summarizer(article_text):
         word_frequencies = {}  
         for word in word_tokenize(formatted_article_text):
             if word not in stopwords:
-                if word not in word_frequencies.keys():
-                    word_frequencies[word.lower()] = 1
-                else:
-                    word_frequencies[word.lower()] += 1
+                if word not in black_list:
+                    if word not in word_frequencies.keys():
+                        word_frequencies[word.lower()] = 1
+                    else:
+                        word_frequencies[word.lower()] += 1
 
         maximum_frequency = max(word_frequencies.values())
         max_keys = [k for k, v in word_frequencies.items() if v == maximum_frequency]
@@ -121,7 +123,7 @@ def Get_Text_Politico(Link_List):
         html1 = driver.page_source
         soup1 = BeautifulSoup(html1, 'lxml')
         article_text = ""
-        all_ps = soup1.select('p')
+        all_ps = soup1.find_all('p', class_=None)
         for p in all_ps[1:-3]:
             article_text += p.get_text() + ' '
         Articles.append(article_text)
