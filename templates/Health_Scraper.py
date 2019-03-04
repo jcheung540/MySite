@@ -620,7 +620,7 @@ def Summary_Writer(Text,Name,Article_List,id):
 
     title_html = []
     for i in range(len(Title)):
-        title_html.append("""<h3><a class='link' href='"""+str(link_dict[link_list[i]])+"""'>"""+str(title_dict[title_list[i]]+"</a></h3>"))
+        title_html.append("""<h3><a class='link' href='"""+str(link_dict[link_list[i]])+"""'>"""+Name+""": """+str(title_dict[title_list[i]]+"</a></h3>"))
 
     body_html = ""
     for i in range(len(Title)):
