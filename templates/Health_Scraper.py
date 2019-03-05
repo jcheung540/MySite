@@ -823,7 +823,7 @@ Biospace_Articles = Get_Text_Biospace(Biospace)
 Fox = Scrape_Fox()
 Fox_Articles = Get_Text_Fox(Fox)
 MSNBC = Scrape_MSNBC()
-MSNBC_Articles = Get_Text_MSNBC(MSNBC)
+# MSNBC_Articles = Get_Text_MSNBC(MSNBC)
 CNN = Scrape_CNN()
 
 
@@ -850,7 +850,7 @@ def Pharma_Combinator():
 
 def News_Combinator():
     Page_Fox = Summary_Writer(Fox, "Fox News", Fox_Articles, 'Fox')
-    Page_MSNBC = Summary_Writer(MSNBC, 'MSNBC', MSNBC_Articles, 'MSNBC')
+    Page_MSNBC = HTML_Writer(MSNBC, 'MSNBC', 'MSNBC')
     Page_CNN = HTML_Writer(CNN, 'CNN','CNN')
     Page = Page_Fox[0]+Page_Fox[2]+Page_Fox[1]+Page_Fox[3]+'<br>'+Page_MSNBC[1]+Page_MSNBC[3]+'<br>'+Page_CNN[1]+Page_CNN[3]+Page_CNN[4]
     return(Page)
